@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap ||</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- styles css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--header section start-->
+    <header class="header">
+      <!--start navbar-->
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./onlinelogomaker-081420-0156-6474.png"
+              alt="logo"
+              height="52"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fas fa-bars"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse h-auto"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto menu">
+              <li><a href="#features" class="page-scroll">Home</a></li>
+              <li>
+                <a href="#how-it-work" class="page-scroll">About</a>
+              </li>
+              <li>
+                <a href="#screenshots" class="page-scroll">Store</a>
+              </li>
+              <li><a href="#reviews" class="page-scroll">Services</a></li>
+              <li><a href="#pricing" class="page-scroll">Order</a></li>
+            </ul>
+            <div class="items d-none d-lg-flex">
+              <div class="first-item d-flex mr-lg-5 align-items-center">
+                <span class="mr-2">
+                  <i class="fas fa-phone"></i>
+                </span>
+
+                <p class="mb-0">+2348101006314</p>
+              </div>
+
+              <div class="second-item d-flex bg-danger px-1">
+                <span class="mr-2">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+
+                <p class="mb-0">
+                  <span>2 items-</span>
+                  <span>$10.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--navbar end-->
+
+      <!--banner start-->
+      <div class="container-fluid banner">
+        <div class="row justify-content-center align-items-center max-height">
+          <div class="col-10 mx-auto">
+            <div class="banner-text text-center">
+              <h1 class="text-capitalize">
+                welcome to <span class="banner-style">grandma's shop</span>
+              </h1>
+              <button class="btn btn-outline-dark px-3 m-3 py-2">shop</button>
+            </div>
+          </div>
+        </div>
+        <!--cart-->
+        <div class="cart py-3">
+          <!--single item cart-->
+          <div class="cart-item d-flex justify-content-between px-2">
+            <img
+              src="./img-cart/cupcake-1.jpeg"
+              class="img-fluid rounded-circle"
+              alt=""
+            />
+            <div class="item-details">
+              <p class="item-title">cupcake</p>
+              <span class="item-amnt">$15</span>
+            </div>
+
+            <span><i class="fas fa-trash"></i></span>
+          </div>
+          <!--end of single item cart-->
+
+          <!--single item cart-->
+          <div class="cart-item d-flex justify-content-between my-2 px-2">
+            <img
+              src="./img-cart/cupcake-1.jpeg"
+              class="img-fluid rounded-circle"
+              alt=""
+            />
+            <div class="item-details">
+              <p class="item-title">cupcake</p>
+              <span class="item-amnt">$15</span>
+            </div>
+
+            <span><i class="fas fa-trash"></i></span>
+          </div>
+          <!--end of single item cart-->
+
+          <div class="calculations text-center mt-4">
+            <h4>total:<span class="total-price">$40.00</span></h4>
+          </div>
+          <div class="buttons text-center">
+            <button class="btn btn-custom-1 text-uppercase">clear cart</button>
+            <button class="btn btn-dark text-uppercase">check out</button>
+          </div>
+        </div>
+      </div>
+      <!--banner end-->
+    </header>
+    <!--header section end-->
+    <main>
+      <section class="about py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center py-2">
+              <div class="about-col-cont-1 text-center">
+                <h2 class="text-capitalize">about <span>us</span></h2>
+                <p class="w-50 mx-auto">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique eum consequatur quod debitis officiis dolorem
+                  laboriosam impedit natus error delectus?Lorem ipsum, dolor sit
+                  amet consectetur adipisicing elit. Quibusdam, perferendis!
+                </p>
+                <button class="btn btn-dark text-uppercase my-2 py-1 px-2">
+                  explore
+                </button>
+              </div>
+            </div>
+
+            <!--end of first col-->
+
+            <div class="col-md-6">
+              <div class="about-col-cont-2">
+                <div class="about-col-img-cont">
+                  <img
+                    src="../img/sweets-1.jpeg"
+                    alt="about-img"
+                    class="img-fluid test-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!--end of col-2-->
+          </div>
+        </div>
+      </section>
+      <!--end of about-->
+
+      <section class="store py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h2>our <span>store</span></h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="filter-buttons d-flex justify-content-around flex-wrap">
+              <!--
+              <button
+                class="btn btn-outline-danger text-uppercase mr-2"
+                data-filt="all"
+              >
+                all
+              </button>
+              <button
+                class="btn btn-outline-danger text-uppercase mr-2"
+                data-filt="cakes"
+              >
+                cakes
+              </button>
+              <button
+                class="btn btn-outline-danger text-uppercase mr-2"
+                data-filt="cupcakes"
+              >
+                cupcakes
+              </button>
+              <button
+                class="btn btn-outline-danger text-uppercase mr-2"
+                data-filt="sweets"
+              >
+                sweets
+              </button>
+              <button
+                class="btn btn-outline-danger text-uppercase mr-2"
+                data-filt="doughnuts"
+              >
+                doughnuts
+              </button>
+            --></div>
+          </div>
+
+          <div class="row justify-content-center py-2">
+            <div class="col-10 mx-auto">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-warning" id="basic-addon1"
+                    ><i class="fas fa-search"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control input-form"
+                  placeholder="Search"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  id="input-form"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row items-row">
+            <!--
+            <div class="col-md-6 col-lg-4 single-item" data-id="sweets">
+              <div class="card mx-auto">
+                <div class="img-cont">
+                  <img
+                    src="./img/sweets-1.jpeg"
+                    class="card-img-top item-img"
+                    alt="#"
+                  />
+                  <span
+                    ><i class="fas fa-shopping-cart item-icon p-2"></i
+                  ></span>
+                </div>
+
+                <div class="card-body d-flex justify-content-between">
+                  <h4 class="description">sweets</h4>
+                  <h6 class="pricing">$15.00</h6>
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <section class="services py-5 text-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="title">
+              <h2 class="text-capitalize">our services</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="services-col-cont text-center">
+                <img src="./img/candy-icon.png" alt="#" />
+                <h6 class="text-capitalize">candy</h6>
+                <p class="mx-auto w-75">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat tempora officiis ratione ipsa. Fugiat, ipsum.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="services-col-cont text-center">
+                <img src="./img/cupcake-icon.png" alt="#" />
+                <h6 class="text-capitalize">cupcake</h6>
+                <p class="mx-auto w-75">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat tempora officiis ratione ipsa. Fugiat, ipsum.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="services-col-cont text-center">
+                <img src="./img/bread-icon.png" alt="#" />
+                <h6 class="text-capitalize">bread</h6>
+                <p class="mx-auto w-75">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat tempora officiis ratione ipsa. Fugiat, ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="title">
+              <h2 class="text-capitalize">order cake</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="order-col-cont text-center">
+                <h4 class="text-capitalize">birthday cake</h4>
+                <p class="mt-4">Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <button type="button" class="btn btn-custom-1 text-uppercase">
+                  order now
+                </button>
+                <p>starting at $15</p>
+                <img src="./img/trans-cake.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="order-col-cont text-center">
+                <h4 class="text-capitalize">custom cake</h4>
+                <p class="mt-4">Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <button type="button" class="btn btn-custom-1 text-uppercase">
+                  order now
+                </button>
+                <p>starting at $15</p>
+                <img src="./img/trans-custom.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="order-col-cont text-center">
+                <h4 class="text-capitalize">wedding cake</h4>
+                <p class="mt-4">Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <button type="button" class="btn btn-custom-1 text-uppercase">
+                  order now
+                </button>
+                <p>starting at $15</p>
+                <img src="./img/trans-wedding.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer start-->
+    <footer class="">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 bg-dark py-5">
+            <div class="footer-cont-1">
+              <h3 class="text-center text-white text-capitalize mb-3">
+                grandma's
+              </h3>
+
+              <div class="socials d-flex justify-content-between mt-4">
+                <i class="fab fa-facebook-f fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-instagram-square fa-2x"></i>
+                <i class="fab fa-google-plus fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="footer-cont-2 ml-3">
+              <h3 class="text-center text-capitalize mb-3">
+                contact
+              </h3>
+              <div class="address d-flex">
+                <i class="fas fa-map"></i>
+                <p class="ml-3">123 Main street San Diego,CA,90221.</p>
+              </div>
+              <div class="phone d-flex">
+                <i class="fas fa-phone-alt"></i>
+                <p class="ml-3">081010063141.</p>
+              </div>
+              <div class="email d-flex">
+                <i class="fas fa-envelope-open"></i>
+                <p class="ml-3">email@email.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+    <!-- js   files -->
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/bootstrap/js/popper.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

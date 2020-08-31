@@ -1,0 +1,224 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+/*opacity on nav link*/
+.bg-transparent ul li a:hover,
+.white-bg.affix ul li a:hover {
+  opacity: 1;
+}
+
+/*nav toggler remove outline and shii*/
+.navbar-toggler {
+  color: var(--mainYellow);
+  border: none !important;
+  outline: 0 !important;
+}
+
+/*main menu new style*/
+.header nav.navbar {
+  padding: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/*not necessarily needed...
+.navbar-brand {
+  font-size: inherit;
+  height: auto;
+  margin-bottom: -8px;
+}
+*/
+.menu {
+  display: block;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+/*nav links*/
+.menu li a {
+  font-size: 17px;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px 10px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  color: var(--mainYellow);
+  opacity: 0.8;
+}
+/*menu hover*/
+.menu li a:hover,
+.menu li:hover > a {
+  opacity: 1;
+}
+@media (min-width: 320px) and (max-width: 992px) {
+  .menu li {
+    display: block;
+  }
+}
+.fa-bars {
+  font-size: 2rem;
+}
+/*
+=============== 
+cart
+===============
+*/
+
+.second-item {
+  cursor: pointer;
+}
+
+.second-item:hover {
+  color: var(--mainWhite);
+}
+
+.max-height {
+  min-height: 100vh;
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url("../img/headerBcg.jpeg") center/cover no-repeat fixed;
+}
+
+.about-col-img-cont {
+  position: relative;
+}
+
+.about-col-img-cont::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  top: -0.6rem;
+  left: -0.6rem;
+  border: 3px solid var(--mainYellow);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+.about-col-img-cont:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.img-cont {
+  position: relative;
+  transition: all 1s ease-in;
+  overflow: hidden;
+}
+.item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--mainYellow);
+  transition: all 0.5s ease-in;
+  opacity: 0;
+  border-top-left-radius: 1rem;
+}
+
+.img-cont:hover .item-icon {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.img-cont:hover .item-img {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in;
+}
+
+.item-img {
+  transition: all 0.5s ease-in;
+}
+.card {
+  transition: all 0.5s ease-in;
+}
+
+.card:hover {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../img/servicesBcg.jpeg) center/cover fixed no-repeat;
+}
+
+.btn-custom-1 {
+  background: #fff;
+  color: var(--mainPink);
+  border: 1px solid black;
+}
+
+.btn-custom-1:hover {
+  background: var(--mainPink);
+  color: var(--mainBlack);
+}
+
+.banner {
+  position: relative;
+}
+
+.cart {
+  position: absolute;
+  width: 0px;
+  min-height: 300px;
+  top: 65px;
+  right: 0;
+  background: /*rgba(255, 255, 255, 0.5);*/ red;
+  color: white;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+
+.show-cart {
+  width: 300px;
+  transform: rotateY(-360deg);
+}
